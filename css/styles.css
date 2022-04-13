@@ -1,0 +1,128 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    background-color: rgb(219, 216, 216);
+}
+
+/* el selector html y body, hacen que 1 rem sean 10 pixeles */
+/* box-sizing ayuda a que padding no se sume al tamaño de px */
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
+header{
+    background-image: url(../img/header.jpg);
+    opacity: 0.9;
+    height: 62rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.headerContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(3, 3, 3, .5)
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin-top: 0%;
+    color: whitesmoke;
+}
+
+.NavBar{
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.NavBar a{
+    font-size: x-large;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .NavBar{
+        flex-direction: row;
+    }
+}
+
+.NavBar a:hover{
+    color: gray;
+    transition: all 1s;
+    background-color: rgb(68, 66, 73);
+    background-size: 1rem;
+    border-radius: 0.4rem;
+    transition: all 0.5s;
+}
+
+.inicio{
+    position: fixed;
+}
+.inicio a{
+    color: rgb(104, 102, 102);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: large;
+}
+
+.inicio a:hover{
+    color: rgb(3, 3, 3);
+    transition: all 0.3s;
+}
+
+.botonconainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.boton{
+    background-color: rgb(88, 59, 59);
+    color: white;
+    opacity: 0.9;
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: large;
+
+}
+
+.boton:hover{
+    background-color: grey;
+
+}
+
+.subtitulo{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+.imgProyecto{
+    width: 30rem;
+    height: 14rem;
+    border-radius: 1rem;
+}
+
+.imgProyecto:hover{
+    opacity: 0.5;
+}
